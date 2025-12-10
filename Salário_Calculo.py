@@ -56,10 +56,12 @@ VRL = VRM - DVR
 VTL = VTM
 #Mensagem ao usuário
 print(f'De acordo com os dados fornecidos, o valor líquido do seu salário a ser recebido será de {SL:.2f}')
-print(f'O valor a ser descontado devido ao INSS é igual a {inss:.2f}')
-print(f'O valor a ser descontado devido ao IRRF é igual a {irrf:.2f}')
-print(f'O valor líquido a ser recebido de VR será de {VRL:.2f}')
-print(f'O valor líquido a ser recebido de VT será de {VTL:.2f}')
+print(f'O valor a ser descontado devido ao INSS é igual a R${inss:.2f}')
+print(f'O valor a ser descontado devido ao IRRF é igual a R${irrf:.2f}')
+print(f'O valor a ser descontado devido ao VR é igual a R${DVR:.2f}')
+print(f'O valor a ser descontado devido ao VT é igual a R${DVT:.2f}')
+print(f'O valor líquido a ser recebido de VR será de R${VRL:.2f}')
+print(f'O valor líquido a ser recebido de VT será de R${VTL:.2f}')
 print()
 print(f'Somando todos os seus valores líquidos, o total que receberá no dia do pagamento será: R${SL + VRL + VTL:.2f}')
 input()
