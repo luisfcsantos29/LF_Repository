@@ -45,9 +45,11 @@ DVT = SB * (6/100)
 if RC == 'e':
     DVR = 0
     DVT = 0
+    irrf = 0
 else:
     DVR = DVR
     DVT = DVT
+    irrf = irrf
 #Valor líquido a ser recebido
 SL = SB - DVT - inss - irrf
 VRL = VRM - DVR
@@ -60,5 +62,4 @@ print(f'O valor líquido a ser recebido de VR será de {VRL:.2f}')
 print(f'O valor líquido a ser recebido de VT será de {VTL:.2f}')
 print()
 print(f'Somando todos os seus valores líquidos, o total que receberá no dia do pagamento será: R${SL + VRL + VTL:.2f}')
-print()
 input()
